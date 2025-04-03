@@ -30,6 +30,7 @@ public class Main {
         double valorHora = 0;
         double cantidadHoras = 0;
         double bonificacionEmpleado = 0;
+        double valorSalarioMinimo = 0;
         int auxilioTransporte = 200000;
 
         System.out.println("Ingrese el usuario");
@@ -49,6 +50,20 @@ public class Main {
             valorHora = sc.nextDouble();
             System.out.println("Ingrese la cantidad de horas trabajadas");
             cantidadHoras = sc.nextDouble();
+            System.out.println("Ingrese el valor del salario minimo de este año");
+            valorSalarioMinimo = sc.nextDouble();
+
+            salarioBruto = valorHora * cantidadHoras;
+             if (salarioBruto>(valorSalarioMinimo*2)){
+                 bonificacionEmpleado = 0;
+                 auxilioTransporte = 0;
+             } else {
+                 bonificacionEmpleado = salarioBruto * 0.1;
+                 auxilioTransporte = 200000;
+             }
+             salarioNeto = salarioBruto + bonificacionEmpleado + auxilioTransporte;
+            System.out.println("El salario neto es : " + salarioNeto);
+
 
         } else {
             System.out.println("Error de credenciales");
