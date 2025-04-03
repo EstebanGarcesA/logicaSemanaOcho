@@ -34,8 +34,12 @@ public class Main {
 
         System.out.println("Ingrese el usuario");
         usuarioEmpleado = sc.nextLine();
+        System.out.println("Ingrese la contraseña");
+        contrasenaUsuario = sc.nextLine();
 
-
+        if(usuarioEmpleado.equals("admin")){
+            System.out.println("ha ingresado de forma correcta");
+        }
 
 
 
