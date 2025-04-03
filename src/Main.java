@@ -39,6 +39,17 @@ public class Main {
 
         if(usuarioEmpleado.equals("admin") && contrasenaUsuario.equals("admin")){
             System.out.println("ha ingresado de forma correcta");
+            System.out.println("Ingrese el nombre del empleado: ");
+            nombreEmpleado = sc.nextLine();
+            System.out.println("Ingrese el número de documento");
+            documentoIdentidad = sc.nextLine();
+            System.out.println("Indiqué un día de descanso de lunes a viernes");
+            diaDescanso = sc.nextLine();
+            System.out.println("Ingrese el valor de la hora de trabajo");
+            valorHora = sc.nextDouble();
+            System.out.println("Ingrese la cantidad de horas trabajadas");
+            cantidadHoras = sc.nextDouble();
+
         } else {
             System.out.println("Error de credenciales");
         }
