@@ -37,9 +37,15 @@ public class Main {
         System.out.println("Ingrese la contraseña");
         contrasenaUsuario = sc.nextLine();
 
-        if(usuarioEmpleado.equals("admin")){
+        if(usuarioEmpleado.equals("admin") && contrasenaUsuario.equals("admin")){
             System.out.println("ha ingresado de forma correcta");
+        } else {
+            System.out.println("Error de credenciales");
         }
+//        if(usuarioEmpleado.equals("admin")){
+//            if (contrasenaUsuario.equals("admin")){
+//            System.out.println("ha ingresado de forma correcta");
+//        }
 
 
 
