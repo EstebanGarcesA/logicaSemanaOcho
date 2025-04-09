@@ -17,6 +17,7 @@ public class Main {
 //        toda la informacion del empleado se debe mostrar en un mensaje descriptivo
 
         // definición y asignación de variables
+        // Comentario de prueba
         Scanner sc = new Scanner(System.in);
         String nombreEmpleado = "";
         String documentoIdentidad = "";
